@@ -1,14 +1,21 @@
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
-[tool.poetry]
+[project]
+authors = [
+    {name = "QuantTide", email = "opensource@quanttide.com"},
+]
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "typer>=0.9.0",
+]
 name = "psych-agent"
 version = "0.1.0-alpha.1"
 description = "Psychology Agent"
-authors = ["Guo Zhang <zhangguo@quanttide.com>"]
 readme = "README.md"
-packages = [{include = "psych_agent"}]
 
-[tool.poetry.dependencies]
-python = "^3.9"
+[tool.pdm.build]
+includes = [
+    "psych_agent",
+]

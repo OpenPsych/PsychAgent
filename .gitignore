@@ -140,3 +140,8 @@ cython_debug/
 # IDE
 .vscode/
 .idea/
+
+# pdm
+.pdm-build/
+.pdm.toml
+.pdm-python
