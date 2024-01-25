@@ -1,4 +1,4 @@
-# `psych-agent`
+# PsychAgent
 
 Psychology Agent
 
